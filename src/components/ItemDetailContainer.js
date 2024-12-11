@@ -6,7 +6,7 @@ const getItem = () => {
     setTimeout(() => {
       resolve({
         title: 'Pudim de Leite Condensado',
-        image: 'https://via.placeholder.com/400x300?text=Pudim', // Substitua por uma URL real de imagem
+        image: 'https://static.itdg.com.br/images/640-440/d1307a2e17cda187df76b78cfd3ac464/shutterstock-2322251819-1-.jpg',
         description: 'Um delicioso pudim de leite condensado, perfeito para sobremesas.',
         price: 25.0,
       });
