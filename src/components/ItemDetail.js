@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import ItemCount from './ItemCount'; // Certifique-se de ajustar o caminho de importação
+import ItemCount from './ItemCount'; 
 import { useNavigate } from 'react-router-dom';
 
 function ItemDetail({ item }) {
-  const [quantity, setQuantity] = useState(0); // Estado para controlar a quantidade de itens adicionados
+  const [quantity, setQuantity] = useState(0);
   const navigate = useNavigate(); // Hook para navegar entre rotas
 
   // Função chamada ao adicionar itens
@@ -27,18 +27,18 @@ function ItemDetail({ item }) {
         <ItemCount stock={item.stock} initial={1} onAdd={handleAdd} />
       ) : (
         <button
-          onClick={() => navigate('/cart')} // Navega para a página do carrinho
-          style={{
-            padding: '10px 20px',
-            backgroundColor: '#28a745',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-          }}
-        >
-          Finalizar Compra
-        </button>
+  onClick={() => navigate('/cart')}
+  style={{
+    padding: '10px 20px',
+    backgroundColor: '#28a745',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+  }}
+>
+  Finalizar Compra
+</button>
       )}
     </div>
   );
