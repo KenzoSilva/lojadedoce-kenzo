@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'; // Importa o ro
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer';
-import Cart from './pages/Cart/'; // Importa o componente Cart
+import Cart from './pages/Cart/Cart';
 
 function App() {
   const handleAdd = (quantity) => {
